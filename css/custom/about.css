@@ -1,0 +1,18 @@
+.ranks {
+    padding: 0px 20px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+.ranks h2 {
+    text-align: center;
+}
+.officers {
+text-align: left;
+}
+.officer {
+    padding: 10px 2px;
+}
+.officer img {
+    padding-right: 10px;
+}

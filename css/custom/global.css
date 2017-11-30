@@ -1,0 +1,173 @@
+/* Global Styling */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 10px 0px;
+  background-image: url("../../img/sailboatsCropped.jpg");
+}
+
+header * {
+  display: inline;
+}
+
+header img {
+  /*height: 96px;
+  width: 157px;
+  flex: 1;
+  margin-top: 10px;*/
+  margin-left: 22px;
+}
+
+header h1 {
+  flex: 1;
+  font-size: 40px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+header b {
+  font-size: 60px;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  background: #eee;
+  padding: 10px;
+}
+
+#menu-toggle {display: none;}
+.label-toggle {display: none;}
+
+nav .icon {
+  flex: 1;
+  text-align: center;
+  padding:0px 10px;
+  /*pointer-events: none;*/
+
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: all .5s ease;
+    text-align: center;
+
+}
+
+nav .icon:hover {
+    background-color: #aaa;
+    color: #eee;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* Main content styling */
+.main {
+  display: flex;
+  /*align-items: center;*/
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  background-color:
+}
+
+.main div {
+
+}
+
+.flagCol {
+    flex: 1;
+    padding-left: 20px;
+    margin: 16px 0px;
+
+
+}
+
+.flagColLinks {
+  /*background: #eee;*/
+
+}
+
+.flagColLinks a {
+  display: block;
+}
+
+.infoCol {
+    flex: 3;
+    padding: 0px 20px;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        margin: 0px;
+    }
+    header h1 span {
+        display: none;
+    }
+    header h1 b {
+        font-size: 90px;
+    }
+    .navBar {
+        position:fixed;
+    }
+    .main {
+        text-align: center;
+    }
+    .flagCol {
+        display: none;
+    }
+
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 625px) {
+    header {
+        display: none;
+    }
+    .mobile {
+        display: inline-flex;
+        flex-basis: 5rem;
+    }
+    .mobile.menu {
+        width: 5rem;
+        flex: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        /*position: fixed;*/
+    }
+
+    nav .navItem {
+        display: none;
+    }
+
+    .flagCol {
+        display: none;
+    }
+
+    .main {
+        background-image: url("../../img/sailboats.jpg")
+    }
+
+}

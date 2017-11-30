@@ -1,0 +1,14 @@
+.racingInfo {
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.raceLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.raceLinks a{
+    margin: 5px;
+    flex-grow: 1;
+}

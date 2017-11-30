@@ -1,0 +1,16 @@
+@media (max-width: 325px) {
+    .events span {
+        display: block;
+    }
+}
+
+.upcomingEvents {
+    background: #eee;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+
+}
+
+.upcomingEvents h3 {
+    text-align: center;
+}
