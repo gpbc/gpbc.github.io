@@ -1,8 +1,14 @@
+.about {
+  background: url(../../img/partyPhotoCropped.jpg) no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
 .ranks {
     padding: 0px 20px;
     display: flex;
     flex: 2;
     flex-direction: column;
+    text-align: center;
 }
 .ranks h2 {
     text-align: center;
@@ -12,7 +18,30 @@ text-align: left;
 }
 .officer {
     padding: 10px 2px;
+    text-align: center;
 }
 .officer img {
     padding-right: 10px;
+}
+.officer span {
+  text-align: center;
+}
+
+@media (max-width: 625px) {
+
+  .main {
+    flex-direction:column;
+  }
+
+  .main .ranks {
+    order: 1;
+  }
+
+  .main .infoCol {
+    order: 0;
+  }
+
+  .officer {
+    text-align: center;
+  }
 }

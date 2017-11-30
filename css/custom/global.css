@@ -28,9 +28,9 @@ header * {
 }
 
 header img {
-  /*height: 96px;
-  width: 157px;
-  flex: 1;
+  /*height: 96px;*/
+  width: 200px;
+  /*flex: 1;
   margin-top: 10px;*/
   margin-left: 22px;
 }
@@ -58,6 +58,7 @@ menu {
 
 menu .logo {
   margin: 5px;
+  width: 157px;
   /*width: 40px;*/
 }
 
@@ -139,22 +140,25 @@ nav a:hover {
 .flagCol {
     flex: 1;
     padding-left: 20px;
-    margin: 0px 16px 0px 0px;
+    margin: 20px 16px 0px 0px;
     /*background-color: #e8eeff;*/
 
 
 }
 
 .flagColLinks {
+  margin-bottom: 10px;
   /*background: #eee;*/
 
 }
 
 .flagColLinks a {
   display: block;
+  color: black;
 }
 
 .infoCol {
+    text-align: center;
     flex: 3;
     /*padding: 0px 20px;*/
 }
@@ -166,9 +170,9 @@ nav a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: url(../../img/racing/secondWindCropped.jpg) no-repeat;
+  /*background: url(../../img/racing/secondWindCropped.jpg) no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: 100%;*/
   height: 300px;
 }
 .infoSplash h2 {

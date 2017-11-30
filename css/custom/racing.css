@@ -4,6 +4,11 @@
     margin: 0px auto;
 }
 
+.racing {
+  background: url(../../img/racing/secondWindCropped.jpg) no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
 /*.infoSplash {
   display: flex;
   align-items: flex-end;
@@ -27,4 +32,16 @@
 .raceLinks a{
     margin: 5px;
     flex-grow: 1;
+}
+
+@media (max-width: 625px) {
+  .infoSplash {
+    height: auto;
+    background: none;
+  }
+  .infoSplash h2 {
+    font-size: 2rem;
+    color: black;
+  }
+
 }
