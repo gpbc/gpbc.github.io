@@ -4,6 +4,22 @@
     margin: 0px auto;
 }
 
+/*.infoSplash {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(../../img/racing/secondWindCropped.jpg) no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  height: 300px;
+}*/
+/*.infoSplash h2 {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+}*/
+
+
 .raceLinks {
     display: flex;
     flex-wrap: wrap;
