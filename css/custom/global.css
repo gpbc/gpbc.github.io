@@ -6,6 +6,10 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+body {
+    padding-bottom: 40px;
+}
 /* Header Styling */
 header {
   display: flex;
@@ -67,11 +71,12 @@ nav a {
     text-decoration: none;
     transition: all .5s ease;
     text-align: center;
+    padding: 5px;
 
 }
 
-nav .icon:hover {
-    background-color: #aaa;
+nav a:hover {
+    background-color: #ccc;
     color: #eee;
 }
 
