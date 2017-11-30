@@ -13,6 +13,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="libs/responsive-nav/responsive-nav.css">
+        <script src="libs/responsive-nav/responsive-nav.min.js"></script>
         <link rel="stylesheet" href="css/custom/global.css" />
         <link rel="stylesheet" href="css/custom/index.css" />
     </head>
@@ -32,17 +34,22 @@
         </header>
 
       <!-- Nav Content -->
-        <nav>
-            <div class="logo mobile"><img src="img/gpbcFlag.gif" /></div>
-            <div class="icon mobile menu"><a href="#">Menu</a></div>
-            <div class="icon navItem"><a href="./index.html">Home</a></div>
-            <div class="icon navItem"><a href="./about.html">About Us</a></div>
-            <div class="icon navItem"><a href="img/pdf/eventSchedule.pdf">Events</a></div>
-            <div class="icon navItem"><a href="http://us10.campaign-archive2.com/home/?u=386f546fe97ac197d1ae1ec9a&id=6bff07798b">Docksider</a></div>
-            <div class="icon navItem"><a href="./racing.html">Racing</a></div>
-            <div class="icon navItem"><a href="#">Members Only</a></div>
-            <div class="icon navItem"><a href="#">Contact Us</a></div>
-            <div class="icon navItem"><a href="#">New Member Info</a></div>
+      <menu>
+        <a href="./index.html"><img class="logo mobile" src="img/gpbcFlag.gif" /></a>
+        <a href='#' id="custom-toggle" class="nav-toggle" aria-hidden="false">Menu</a>
+      </menu>
+        <nav class="nav-collapse">
+
+                <div class="icon navItem"><a href="./index.html">Home</a></div>
+                <div class="icon navItem"><a href="./about.html">About Us</a></div>
+                <div class="icon navItem"><a href="img/pdf/eventSchedule.pdf" target="_blank">Events</a></div>
+                <div class="icon navItem"><a href="http://us10.campaign-archive2.com/home/?u=386f546fe97ac197d1ae1ec9a&id=6bff07798b">Docksider</a></div>
+                <div class="icon navItem"><a href="./racing.html">Racing</a></div>
+                <div class="icon navItem"><a href="#">Members Only</a></div>
+                <div class="icon navItem"><a href="#">Contact Us</a></div>
+                <div class="icon navItem"><a href="#">New Member Info</a></div>
+
+
         </nav>
 
       <!-- Main Content -->
@@ -65,20 +72,20 @@
                 <p>We are a social and boating club (sail and power) made up
                   mainly of City of Grosse Pointe residents.
                   We put on a variety of events throughout the year.
-                  Click on Events to check these out.</p>
+                  Click on <a href="img/pdf/eventSchedule.pdf">Events</a> to check these out.</p>
               <section class="upcomingEvents">
                   <h3>Upcoming Events</h3>
                   <div class="events">
-                      <p><span>Oct 14 Sat </span><span><a href="img/pdf/chiliCookOff.pdf">Chili Cookoff</a></span></p>
-                      <p><span>Nov 17 Fri </span><span><a href="img/pdf/wip.pdf">GP Tree Lighting</a></span></p>
-                      <p><span>Dec 9 Fri </span><span><a href="img/pdf/xmas.pdf">Christmas Party</a></span></p>
-                      <p><span>Mar 3 Sat </span><span><a href="img/pdf/wip.pdf">Commodore's Ball</a></span></p>
+                      <p><span>Oct 14 Sat </span><span><a href="img/pdf/chiliCookOff.pdf" target="_blank">Chili Cookoff</a></span></p>
+                      <p><span>Nov 17 Fri </span><span><a href="img/pdf/wip.pdf" target="_blank">GP Tree Lighting</a></span></p>
+                      <p><span>Dec 9 Fri </span><span><a href="img/pdf/xmas.pdf" target="_blank">Christmas Party</a></span></p>
+                      <p><span>Mar 3 Sat </span><span><a href="img/pdf/wip.pdf" target="_blank">Commodore's Ball</a></span></p>
                   </div>
-                  <p>Click <a href="img/pdf/eventSchedule.pdf">here</a> to see the full event schedule</p>
+                  <p>Click <a href="img/pdf/eventSchedule.pdf" target="_blank">here</a> to see the full event schedule</p>
               </section>
                 <p>If you are interested in joining us
                   (you don’t have to own a boat to join)
-                  click on New Member Info.
+                  click on <a href="#">New Member</a> Info.
                 </p>
                 <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
 
@@ -88,6 +95,27 @@
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script>
+            var nav = responsiveNav(".nav-collapse", { // Selector
+                animate: true, // Boolean: Use CSS3 transitions, true or false
+                transition: 350, // Integer: Speed of the transition, in milliseconds
+                label: "Menu", // String: Label for the navigation toggle
+                insert: "before", // String: Insert the toggle before or after the navigation
+                customToggle: "custom-toggle", // Selector: Specify the ID of a custom toggle
+                closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+                openPos: "static", // String: Position of the opened nav, relative or static
+                navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+                navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+                jsClass: "js", // String: 'JS enabled' class which is added to  element
+                init: function(){}, // Function: Init callback
+                open: function(){
+                  //$('menu .logo').toggle();
+                }, // Function: Open callback
+                close: function(){
+                  //$('menu .logo)').toggle();
+                } // Function: Close callback
+            });
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
