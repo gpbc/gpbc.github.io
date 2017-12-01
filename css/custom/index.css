@@ -1,5 +1,5 @@
 @media (max-width: 325px) {
-    .events span {
+    .splash span {
         display: block;
     }
 }
@@ -7,13 +7,13 @@
 .carousel.slick-slider {
   margin: 0px;
 }
-.carousel.small {
+.small {
   display: none;
 }
-.carousel.med {
+.med {
   display: none;
 }
-.carousel.large {
+.large {
   display: block;
 }
 .carousel img {
@@ -24,17 +24,17 @@
   bottom: 0px;
 }
 
-.infoCol .intro {
+.infoCol .info {
   background: linear-gradient( rgba(232, 238, 255, 0.1), rgba(232, 238, 255, 0.1)), url("../../img/textures/dust_scratches.png");
   color: rgba(120,120,120, 0.7);
   padding: 20px 10px;
 }
 
-.intro p {
+.info p {
   font-size: 1.2rem;
 }
 
-.events {
+.splash {
 
 }
 
@@ -43,13 +43,13 @@
   position: relative;
 }
 
-.events .btn {
+.splash .btn {
   position: relative;
   bottom: 190px;
   vertical-align: middle;
 }
 
-.events img {
+.splash img {
 
 }
 
@@ -66,28 +66,34 @@
     text-align: center;
 }
 
-/*@media (min-width: 385px) and (max-width: 600px) {
-  .carousel.small {
+@media (min-width: 385px) and (max-width: 600px) {
+  .small {
     display: none;
   }
 
-  .carousel.med {
+  .med {
     display: block;
   }
 
-  .carousel.large {
+  .large {
     display: none;
+  }
+  .splash .btn {
+    bottom: 150px;
   }
 }
 
 @media (max-width: 384px) {
-  .carousel.small {
+  .small {
     display: block;
   }
-  .carousel.med {
+  .med {
     display: none;
   }
-  .carousel.large {
+  .large {
     display: none;
   }
-}*/
+  .splash .btn {
+    bottom: 100px;
+  }
+}
