@@ -10,9 +10,34 @@ html {
 body {
     background-color: rgb(251, 251, 251);
 }
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 3px solid transparent;
+  white-space: nowrap;
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.66666667;
+  border-radius: 1px;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  color: rgba(232, 238, 255, 1);
+  background-color: transparent;
+  border-color: rgba(232, 238, 255, 1);
+  text-decoration: none;
+}
 /* Header Styling */
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 1000px;
@@ -21,6 +46,10 @@ header {
   background-image: url("../../img/sailboatsCropped.jpg") ;
   /*background-size: initial;*/
   background-repeat: no-repeat;
+}
+
+header {
+  display: none;
 }
 
 header * {
@@ -55,9 +84,14 @@ menu {
   margin: 0px;
   justify-content: space-between;
 }
+h2 {
+  margin: 0px;
+  padding: 10px;
+}
 
 menu .logo {
   margin: 5px;
+  margin-top: 10px;
   width: 157px;
   /*width: 40px;*/
 }
@@ -76,11 +110,16 @@ menu .nav-toggle {
 
 /* Navbar styling */
 nav {
+  position: fixed;
+  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: 0px auto;
+  background: rgba(232, 238, 255, 0.2);
+  z-index: 100;
   /*background: #e8eeff;*/
   /*justify-content: space-around;*/
 }
@@ -96,6 +135,10 @@ nav .icon {
   /*pointer-events: none;*/
 
 }
+
+/*nav .nav-collapse {
+  display: flex;
+}*/
 
 nav .navItem {
   float: none;
@@ -124,25 +167,16 @@ nav a:hover {
 
 /* Main content styling */
 .main {
-  display: flex;
+  /*display: flex;*/
   /*align-items: center;*/
   width: 100%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: 0px auto;
   padding-bottom: 40px;
 
 }
 
 .main div {
-
-}
-
-.flagCol {
-    flex: 1;
-    padding-left: 20px;
-    margin: 20px 16px 0px 0px;
-    /*background-color: #e8eeff;*/
-
 
 }
 
@@ -162,8 +196,18 @@ nav a:hover {
     flex: 3;
     /*padding: 0px 20px;*/
 }
+
+.infoCol h2 {
+  font-family: serif;
+  /*text-transform: uppercase;*/
+}
 .infoCol p {
   padding: 0px 20px;
+  margin: 0px;
+}
+
+.infoCol img {
+  width: 100%
 }
 
 .infoSplash {

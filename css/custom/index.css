@@ -4,6 +4,55 @@
     }
 }
 
+.carousel.slick-slider {
+  margin: 0px;
+}
+.carousel.small {
+  display: none;
+}
+.carousel.med {
+  display: none;
+}
+.carousel.large {
+  display: block;
+}
+.carousel img {
+  width: 100%;
+}
+
+.slick-dots {
+  bottom: 0px;
+}
+
+.infoCol .intro {
+  background: linear-gradient( rgba(232, 238, 255, 0.1), rgba(232, 238, 255, 0.1)), url("../../img/textures/dust_scratches.png");
+  color: rgba(120,120,120, 0.7);
+  padding: 20px 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.events {
+
+}
+
+.eventSpacer {
+
+  position: relative;
+}
+
+.events .btn {
+  position: relative;
+  bottom: 190px;
+  vertical-align: middle;
+}
+
+.events img {
+
+}
+
 .upcomingEvents {
     background: rgba(238, 238, 238, 0.6);
     padding: 10px 30px;
@@ -16,3 +65,29 @@
 .upcomingEvents h3 {
     text-align: center;
 }
+
+/*@media (min-width: 385px) and (max-width: 600px) {
+  .carousel.small {
+    display: none;
+  }
+
+  .carousel.med {
+    display: block;
+  }
+
+  .carousel.large {
+    display: none;
+  }
+}
+
+@media (max-width: 384px) {
+  .carousel.small {
+    display: block;
+  }
+  .carousel.med {
+    display: none;
+  }
+  .carousel.large {
+    display: none;
+  }
+}*/

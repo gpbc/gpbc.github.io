@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/boilerplate.css">
         <link rel="stylesheet" href="libs/responsive-nav/responsive-nav.css">
         <script src="libs/responsive-nav/responsive-nav.min.js"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
         <link rel="stylesheet" href="css/custom/global.css" />
         <link rel="stylesheet" href="css/custom/index.css" />
     </head>
@@ -34,44 +36,53 @@
       </header>
 
     <!-- Nav Content -->
-    <menu>
-      <a href="./index.html"><img class="logo mobile" src="img/gpbcFlag.png" /></a>
-      <a href='#' id="custom-toggle" class="nav-toggle" aria-hidden="false">Menu</a>
-    </menu>
-      <div class="nav-bar">
-        <nav class="nav-collapse">
-                <div class="icon navItem"><a href="./index.html">Home</a></div>
-                <div class="icon navItem"><a href="./about.html">About Us</a></div>
-                <div class="icon navItem"><a href="img/pdf/eventSchedule.pdf" target="_blank">Events</a></div>
-                <div class="icon navItem"><a href="http://us10.campaign-archive2.com/home/?u=386f546fe97ac197d1ae1ec9a&id=6bff07798b">Docksider</a></div>
-                <div class="icon navItem"><a href="./racing.html">Racing</a></div>
-                <div class="icon navItem"><a href="#">Members Only</a></div>
-                <div class="icon navItem"><a href="#">Contact Us</a></div>
-                <div class="icon navItem"><a href="#">New Member Info</a></div>
-        </nav>
-      </div>
+      <nav>
+          <menu>
+            <a href="./index.html"><img class="logo mobile" src="img/gpbcFlagLogo.png" /></a>
+            <a href='#' id="custom-toggle" class="nav-toggle" aria-hidden="false">Menu</a>
+          </menu>
+          <div class="nav-collapse">
+                  <div class="icon navItem"><a href="./index.html">Home</a></div>
+                  <div class="icon navItem"><a href="./about.html">About Us</a></div>
+                  <div class="icon navItem"><a href="img/pdf/eventSchedule.pdf" target="_blank">Events</a></div>
+                  <div class="icon navItem"><a href="http://us10.campaign-archive2.com/home/?u=386f546fe97ac197d1ae1ec9a&id=6bff07798b">Docksider</a></div>
+                  <div class="icon navItem"><a href="./racing.html">Racing</a></div>
+                  <div class="icon navItem"><a href="#">Members Only</a></div>
+                  <div class="icon navItem"><a href="#">Contact Us</a></div>
+                  <div class="icon navItem"><a href="#">New Member Info</a></div>
+          </div>
+      </nav
 
       <!-- Main Content -->
         <section class="main">
-            <div class="flagCol">
-                <div class="flagColLinks">
-                    <!-- Weather radar link -->
-                    <a href="http://www.crh.noaa.gov/dtx">Weather Radar</a>
-                    <!-- Lake levels link -->
-                    <a href="http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/WaterLevelForecast/MonthlyBulletinofGreatLakesWaterLevels.aspx">Lake Levels</a>
-                    <!-- Ship's Store link -->
-                    <a href="http://www.companycasuals.com/GPBCstore/start.jsp">Ship's Store</a>
-                </div>
-                <div class="flagColFlags">
-                    <img src="img/maritimeFlags/gFlag.gif" alt="Maritime G flag"/>
-                </div>
+            <div class="carousel small">
+              <div class="imgSmall"><img src="img/racing/secondWind/secondWind_small.jpg" alt=""/></div>
+              <div class="imgMed"><img src="img/racing/secondWind/secondWind_small.jpg" alt=""/></div>
+              <div class="imgLarge"><img src="img/racing/secondWind/secondWind_small.jpg" alt=""/></div>
             </div>
+            <div class="carousel med">
+              <div class="imgSmall"><img src="img/racing/secondWind/secondWind_med.jpg" alt=""/></div>
+              <div class="imgMed"><img src="img/racing/secondWind/secondWind_med.jpg" alt=""/></div>
+              <div class="imgLarge"><img src="img/racing/secondWind/secondWind_med.jpg" alt=""/></div>
+            </div>
+            <div class="carousel large">
+              <div class="imgSmall"><img src="img/racing/secondWind/secondWind_large.jpg" alt=""/></div>
+              <div class="imgMed"><img src="img/racing/secondWind/secondWind_large.jpg" alt=""/></div>
+              <div class="imgLarge"><img src="img/racing/secondWind/secondWind_large.jpg" alt=""/></div>
+            </div>
+
             <div class="infoCol">
-                <h2>Welcome to the Grosse Pointe Boat Club.</h2>
-                <p>We are a social and boating club (sail and power) made up
-                  mainly of City of Grosse Pointe residents.
-                  We put on a variety of events throughout the year.
-                  Click on <a href="img/pdf/eventSchedule.pdf">Events</a> to check these out.</p>
+              <div class="intro">
+                <h2>Welcome to the Grosse Pointe Boat Club</h2>
+                <p>A social and boating club (sail and power) with a variety of events throughout the year.</p>
+                <p>Think of us as a group of friends who enjoy each other’s company and the time we spend on and around Lake St. Clair.</p>
+                  <!-- Click on <a href="img/pdf/eventSchedule.pdf">Events</a> to check these out.</p> -->
+              </div>
+              <div class="events">
+
+                <img src="img/party/partyPhoto_small.jpg" />
+                <a class="btn" href="#">Events</a>
+              </div>
               <section class="upcomingEvents">
                   <h3>Upcoming Events</h3>
                   <div class="events">
@@ -88,32 +99,28 @@
                 </p>
                 <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
 
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
+                <h4>Check the new Ships Store, with lots of cool new GPBC gear available.</h4>
             </div>
         </section>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script>
-            var nav = responsiveNav(".nav-collapse", { // Selector
-                animate: true, // Boolean: Use CSS3 transitions, true or false
-                transition: 350, // Integer: Speed of the transition, in milliseconds
-                label: "Menu", // String: Label for the navigation toggle
-                insert: "before", // String: Insert the toggle before or after the navigation
-                customToggle: "custom-toggle", // Selector: Specify the ID of a custom toggle
-                closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
-                openPos: "static", // String: Position of the opened nav, relative or static
-                navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-                navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
-                jsClass: "js", // String: 'JS enabled' class which is added to  element
-                init: function(){}, // Function: Init callback
-                open: function(){
-                  //$('menu .logo').toggle();
-                }, // Function: Open callback
-                close: function(){
-                  //$('menu .logo)').toggle();
-                } // Function: Close callback
-            });
+        <script src="libs/slick/slick.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/carousel.js"></script>
+        <script type="text/javascript">
         </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
