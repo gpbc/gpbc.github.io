@@ -201,6 +201,7 @@ menu .nav-toggle {
 .memberLink .btn {
     color: #222;
     border-color: #222;
+    border-width: 2px;
 }
 
 .mobile {
