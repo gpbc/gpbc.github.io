@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/boilerplate.css">
         <link rel="stylesheet" href="libs/responsive-nav/responsive-nav.css">
         <script src="libs/responsive-nav/responsive-nav.min.js"></script>
+        <link rel="stylesheet" href="libs/slick/slick.css" />
+        <link rel="stylesheet" href="libs/slick/slick-theme.css" />
         <link rel="stylesheet" href="css/custom/global.css" />
         <link rel="stylesheet" href="css/custom/racing.css" />
     </head>
@@ -27,117 +29,213 @@
       <!-- Page Content Begins -->
 
       <!-- Header content -->
-        <header>
-          <img src="img/gpbcFlag.png" alt="Grosse Pointe Boat Club Flag"/>
-          <h1 class="desktop"><b>G</b><span>rosse </span><b>P</b><span>ointe </span><b>B</b><span>oat </span><b>C</b><span>lub<span></h1>
-          <!-- <h1 class="mobile"><b>GPBC</b></h1> -->
-        </header>
+      <header>
+        <img src="img/gpbcFlag.png" alt="Grosse Pointe Boat Club Flag"/>
+        <h1 class="desktop"><b>G</b><span>rosse </span><b>P</b><span>ointe </span><b>B</b><span>oat </span><b>C</b><span>lub<span></h1>
+        <!-- <h1 class="mobile"><b>GPBC</b></h1> -->
+      </header>
 
-      <!-- Nav Content -->
-      <menu>
-        <a href="./index.html"><img class="logo mobile" src="img/gpbcFlag.png" /></a>
-        <a href='#' id="custom-toggle" class="nav-toggle" aria-hidden="false">Menu</a>
-      </menu>
-      <div class="nav-bar">
-        <nav class="nav-collapse">
-                <div class="icon navItem"><a href="./index.html">Home</a></div>
-                <div class="icon navItem"><a href="./about.html">About Us</a></div>
-                <div class="icon navItem"><a href="img/pdf/eventSchedule.pdf" target="_blank">Events</a></div>
-                <div class="icon navItem"><a href="http://us10.campaign-archive2.com/home/?u=386f546fe97ac197d1ae1ec9a&id=6bff07798b">Docksider</a></div>
-                <div class="icon navItem"><a href="./racing.html">Racing</a></div>
-                <div class="icon navItem"><a href="#">Members Only</a></div>
-                <div class="icon navItem"><a href="#">Contact Us</a></div>
-                <div class="icon navItem"><a href="#">New Member Info</a></div>
-        </nav>
-      </div>
+    <!-- Nav Content -->
+      <nav>
+          <menu>
+            <a href="./index.html"><img class="logo mobile" src="img/gpbcFlagLogo.png" /></a>
+            <a href='#' id="custom-toggle" class="nav-toggle" aria-hidden="false">Menu</a>
+
+          </menu>
+          <div class="nav-collapse">
+                  <div class="icon navItem"><a href="./members.html">Members</a></div>
+                  <div class="icon navItem"><a href="./events.html">Events</a></div>
+                  <div class="icon navItem"><a href="./racing.html">Racing</a></div>
+          </div>
+
+      </nav>
 
       <!-- Main Content -->
         <section class="main">
-            <div class="flagCol">
-                <div class="flagColLinks">
-                    <!-- Weather radar link -->
-                    <a href="http://www.crh.noaa.gov/dtx">Weather Radar</a>
-                    <!-- Lake levels link -->
-                    <a href="http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/WaterLevelForecast/MonthlyBulletinofGreatLakesWaterLevels.aspx">Lake Levels</a>
-                    <!-- Ship's Store link -->
-                    <a href="http://www.companycasuals.com/GPBCstore/start.jsp">Ship's Store</a>
-                </div>
-                <div class="flagColFlags">
-                    <img src="img/maritimeFlags/gFlag.gif" alt="Maritime G flag"/>
-                </div>
+            <div class="carousel small">
+              <div><img src="img/racing/fleet3/fleet3_small.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_small.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_small.jpg" alt=""/></div>
             </div>
+            <div class="carousel med">
+              <div><img src="img/racing/fleet3/fleet3_med.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_med.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_med.jpg" alt=""/></div>
+            </div>
+            <div class="carousel large">
+              <div><img src="img/racing/fleet3/fleet3_large.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_large.jpg" alt=""/></div>
+              <div><img src="img/racing/fleet3/fleet3_large.jpg" alt=""/></div>
+            </div>
+
             <div class="infoCol">
-                <div class="infoSplash racing">
-                    <h2>Sailboat Racing</h2>
-                </div>
-                <p>The Grosse Pointe Boat Club sponsors a series of
-                    sailboat races held on Wednesday evenings throughout
-                    the summer, weather and wind permitting.
-                    The “wallpaper” for this webpage is from a photo of
-                    one of our Wednesday races.
-                </p>
-                <p>Races are started right from the Neff Park breakwater.
-                    It’s great fun to come down and watch,
-                    even if you are not a sailor or if you are
-                    as they say “between boats”.
-                    If you are interested in crewing,
-                    talk to one of the captains; there’s often a skipper
-                    who is shorthanded.
-                </p>
-                <p>In the fall, the club sponsors the “Kaiser Cup”, an informal
-                    regatta geared to both racers and non-racers.
-                    It’s a great family activity.
-                </p>
-                <p>Just about any sailboat can compete.
-                    Racing is done under the PHRF handicap system,
-                    which balances out the difference between boats,
-                    so they can compete on an equal footing.
-                </p>
-                <p>Racing is open to all club members so if you are not
-                     a member you will have to join,
-                      which is easy to do and pretty inexpensive.
-                </p>
-              <section class="racingInfo">
-                  <h3>Race Committee: Jay Kaiser, George Young</h3>
-                  <div class="raceLinks">
-                      <a href="#">Application Form</a>
-                      <a href="#">Race Instructions</a>
-                      <a href="#">Race Schedule</a>
-                      <a href="#">Race Results</a>
-                      <a href="#">Race Notes</a>
-                      <a href="#">DRYA</a>
+              <div class="info">
+                  <h2>Racing</h2>
+                  <div class="address">
+                      <h2>Wednesday Raceday</h2>
+                      <!-- <blockquote> -->
+                          <p>Hosted every Wednesday throughout the summer, the GPBC series
+                              is a great opportunity to hone your racing skill with dedicated
+                              sailors who don't take things too seriously.<br />
+                              Just about any boat can compete, with the current fleet
+                              containing boats from 20ft right up past 30. The PHRF handicap
+                              system balances out the quirks of each boat so they can
+                              compete on equal footing.
+                          </p>
+                      <!-- </blockquote> -->
                   </div>
-              </section>
+              </div>
+              <div class="splash events">
+                <img class="small" src="img/racing/j24/j24_small.jpg" />
+                <img class="med" src="img/racing/j24/j24_med.jpg" />
+                <img class="large" src="img/racing/j24/j24_large.jpg" />
+              </div>
+              <div class="info">
+                  <div class="address">
+                      <h2>Boat or No Boat</h2>
+                      <!-- <blockquote> -->
+                          <p>Races start from the Neff Park breakwater.<br />
+                              Watching the races is its own fun, if you are not
+                              a sailor or just want to relax.
+                              The race committee is good company, and they might
+                              even let you touch off the cannon if you ask nice.<br />
+                              If you are looking for something a little more involved,
+                              head down to the dock before the race; Often as not,
+                              there's a skipper who is short handed and needs some
+                              extra crew.
+                          </p>
+                      <!-- </blockquote> -->
+                  </div>
+              </div>
+              <div class="splash events">
+                <img class="small" src="img/racing/j24/j24_small.jpg" />
+                <img class="med" src="img/racing/j24/j24_med.jpg" />
+                <img class="large" src="img/racing/j24/j24_large.jpg" />
+              </div>
+              <div class="info">
+                  <div class="address">
+                      <h2>Enrolling Your Boat</h2>
+                      <!-- <blockquote> -->
+                          <p>Ready to race?</p>
+                          <p>Boat enrollment is limited to GPBC members, so sign up!</p>
+                          <div class="memberLink">
+                              <a class="btn" href="./members.html#join">
+                                 Become A Member</a>
+                          </div>
+                          <p>If you are already a member, find a captain who races
+                               and he'll set you on the right track.
+                          </p>
+                      <!-- </blockquote> -->
+                  </div>
+              </div>
+              <hr>
+              <div class="memberLinks">
+                  <h2>Member Links</h2>
+                  <div class="memberLink">
+                      <a class="btn" href="http://ns53.webmasters.com/*grossepointeboatclub.com/httpdocs/membersonly/Roster.pdf">
+                         Docksider</a>
+                      <p>The GPBC periodical</p>
+                  </div>
+                  <div class="memberLink">
+                      <a class="btn" href="http://ns53.webmasters.com/*grossepointeboatclub.com/httpdocs/membersonly/Roster.pdf">
+                         Roster</a>
+                      <p>The current Member roster</p>
+                  </div>
+                  <div class="memberLink">
+                      <a class="btn" href="http://ns53.webmasters.com/*grossepointeboatclub.com/httpdocs/membersonly/BoatUS.pdf">
+                         BoatUS</a>
+                      <p>Application for a discounted Boat US membership</p>
+                  </div>
+                  <div class="memberLink">
+                      <a class="btn" href="http://www.companycasuals.com/GPBCstore/start.jsp">
+                         Ship's Store</a>
+                      <p>The ship's store, with GPBC paraphernalia</p>
+                  </div>
+              </div>
+              <hr id="join">
+              <div>
+                  <h2>Become a Member</h2>
+                  <p>If you are interested in becoming a member of the Grosse Pointe Boat Club: </p>
+                  <p>Email us at <a href="mailto:gpboatclub@gmail.com">gpboatclub@gmail.com</a></p>
+                  <p>or</p>
+                  <p>Download a
+                      <a href="http://ns53.webmasters.com/*grossepointeboatclub.com/httpdocs/Application.pdf">Membership Application</a>
+                     and mail it to
+                     <address>
+                         <p>Grosse Pointe Boat Club</p>
+                         <p>P.O. Box 36076</p>
+                         <p>Grosse Pointe Farms, MI 48236</p>
+                     <address>
+                 </p>
+              </div>
+              <!-- <div class="splash members">
+
+                <img class="small" src="img/party/partyPhoto_small.jpg" />
+                <img class="med" src="img/party/partyPhoto_med.jpg" />
+                <img class="large" src="img/party/partyPhoto_large.jpg" />
+
+                <a class="btn" href="#">Members</a>
+              </div> -->
+              <div class="splash events">
+                <img class="small" src="img/ribFest/ribFest_small.jpg" />
+                <img class="med" src="img/ribFest/ribFest_med.jpg" />
+                <img class="large" src="img/ribFest/ribFest_large.jpg" />
+
+                <a class="btn" href="./events.html">Events</a>
+              </div>
+              <div class="splash racing">
+                <img class="small" src="img/racing/fleet3/fleet3_small.jpg" />
+                <img class="med" src="img/racing/fleet3/fleet3_med.jpg" />
+                <img class="large" src="img/racing/fleet3/fleet3_large.jpg" />
+
+                <a class="btn" href="./racing.html">Racing</a>
             </div>
+
         </section>
+        <footer>
+            <div class="contactUs">
+
+                <h4>Contact Us</h4>
+                <address>
+                    <p>Grosse Pointe Boat Club</p>
+                    <p>P.O. Box 36076</p>
+                    <p>Grosse Pointe Farms, MI 48236</p>
+                    <p>E: <a href="mailto:gpboatclub@gmail.com">gpboatclub@gmail.com</a></p>
+                <address>
+            </div>
+            <div class="links general">
+                <h4>General</h4>
+                <p><a href="#">
+                    Become A Member</a></p>
+                <p><a href="http://www.crh.noaa.gov/dtx">
+                    Weather Radar</a></p>
+                <p><a href="http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/WaterLevelForecast/MonthlyBulletinofGreatLakesWaterLevels.aspx">
+                    Lake Levels</a></p>
+                <p><a href="https://www.companycasuals.com/GPBCstore/start.jsp">
+                    Ship's Store</a></p>
+                <p><a href="./docksider.html">Docksider</a></p>
+                <p><a href="http://www.flickr.com/photos/gpbcphotos/">Photos</a></p>
+            </div>
+            <div class="links memberLinks">
+                <h4>Member Links</h4>
+                <p><a href="http://ns53.webmasters.com/*grossepointeboatclub.com/httpdocs/membersonly/Roster.pdf">
+                    Roster</a></p>
+                <p><a href="http://www.crh.noaa.gov/dtx">
+                    BoatUS Application</a></p>
+            </div>
+        </footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script>
-            var nav = responsiveNav(".nav-collapse", { // Selector
-                animate: true, // Boolean: Use CSS3 transitions, true or false
-                transition: 350, // Integer: Speed of the transition, in milliseconds
-                label: "Menu", // String: Label for the navigation toggle
-                insert: "before", // String: Insert the toggle before or after the navigation
-                customToggle: "custom-toggle", // Selector: Specify the ID of a custom toggle
-                closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
-                openPos: "static", // String: Position of the opened nav, relative or static
-                navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-                navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
-                jsClass: "js", // String: 'JS enabled' class which is added to  element
-                init: function(){}, // Function: Init callback
-                open: function(){
-                  //$('menu .logo').toggle();
-                }, // Function: Open callback
-                close: function(){
-                  //$('menu .logo)').toggle();
-                } // Function: Close callback
-            });
+        <script src="libs/slick/slick.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/carousel.js"></script>
+        <script type="text/javascript">
         </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="//rss.bloople.net/?url=https%3A%2F%2Fus10.campaign-archive.com%2Ffeed%3Fu%3D386f546fe97ac197d1ae1ec9a%26id%3D6bff07798b&limit=1&showtitle=false&type=js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

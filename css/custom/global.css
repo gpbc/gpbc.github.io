@@ -86,6 +86,14 @@ header b {
   background: rgba(232, 238, 255, 0.2);
 }
 
+blockquote {
+    width: 70%;
+    margin: 0px auto;
+    text-align: justify;
+}
+blockquote b {
+    text-align: left;
+}
 /* Navbar styling */
 nav {
   position: fixed;
@@ -96,11 +104,11 @@ nav {
   width: 100%;
   /*max-width: 1000px;*/
   margin: 0px auto;
-  background: rgba(232, 238, 255, 0.2);
+  background: rgba(232, 238, 255, 0.3);
   z-index: 100;
   transition: all .5s ease;
   /*background: #e8eeff;*/
-  /*justify-content: space-around;*/
+  justify-content: space-between;
 }
 
 nav.open {
@@ -147,6 +155,7 @@ nav a:hover {
 }
 
 menu {
+    flex: 1;
   display: flex;
   align-items: center;
   width: 100%;
@@ -177,12 +186,21 @@ menu .nav-toggle {
     /*background: rgba(232, 238, 255, 0.5);*/
 }
 
-.nav-collapse {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /*background: rgba(232, 238, 255, 0.5);*/
+.address {
+    /*background:rgba(128, 174, 247, 0.2);*/
+    max-width: 700px;
+    margin: 0 auto;
+}
 
+.memberLink {
+    padding: 0.5rem 0;
+}
+.memberLink p {
+    padding-top: .1rem;
+}
+.memberLink .btn {
+    color: #222;
+    border-color: #222;
 }
 
 .mobile {
@@ -219,6 +237,10 @@ menu .nav-toggle {
 .infoCol {
     text-align: center;
     flex: 3;
+    background: linear-gradient( rgba(232, 238, 255, 0.1), rgba(232, 238, 255, 0.1)), url("../../img/textures/dust_scratches.png");
+    /*color: rgba(120,120,120, 0.7);*/
+    color: #222;
+    padding-bottom: 3rem;
     /*padding: 0px 20px;*/
 }
 
@@ -229,11 +251,120 @@ menu .nav-toggle {
 .infoCol p {
   padding: 0px 20px;
   margin: 0px;
+  font-family: sans-serif;
 }
 
 .infoCol img {
   width: 100%
 }
+
+@media (max-width: 325px) {
+    .splash span {
+        display: block;
+    }
+}
+
+.carousel.slick-slider {
+  margin: 0px;
+}
+.small {
+  display: none;
+}
+.med {
+  display: none;
+}
+.large {
+  display: block;
+}
+.carousel img {
+  width: 100%;
+}
+
+.slick-dots {
+  bottom: 0px;
+}
+
+.infoCol .info {
+
+  padding: 20px 10px;
+}
+
+.info h1 {
+    margin: 0;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+.splash {
+    position: relative;
+}
+
+.splash .btn {
+  position: absolute;
+  left: calc(50% - 54px);
+  bottom: calc(50% - 22px);
+  vertical-align: middle;
+  margin: 0px auto;
+}
+
+.splash img {
+
+}
+
+.splash.events {
+    /*background-position: top center;
+    background-size: cover;
+    background-image: url('../../img/ribFest/ribFest_large.jpg');
+    background-repeat: no-repeat;*/
+}
+
+.upcomingEvents {
+    background: rgba(238, 238, 238, 0.6);
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.upcomingEvents h3 {
+    text-align: center;
+}
+
+@media (min-width: 385px) and (max-width: 600px) {
+  .small {
+    display: none;
+  }
+
+  .med {
+    display: block;
+  }
+
+  .large {
+    display: none;
+  }
+  .splash .btn {
+    /*bottom: 150px;*/
+  }
+}
+
+@media (max-width: 384px) {
+  .small {
+    display: block;
+  }
+  .med {
+    display: none;
+  }
+  .large {
+    display: none;
+  }
+  .splash .btn {
+    /*bottom: 100px;*/
+  }
+}
+
 
 .infoSplash {
   display: flex;
@@ -272,7 +403,12 @@ footer div {
 footer .contactUs a {
     color: #222;
 }
-footer .general a {
+/*footer .general {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}*/
+footer .links a {
     color: #222;
     text-decoration: none;
 }
@@ -307,7 +443,7 @@ footer .general a {
 }
 
 /* Media Queries for responsive design */
-@media (max-width: 625px) {
+@media (max-width: 624px) {
     header {
         display: none;
     }
@@ -330,6 +466,14 @@ footer .general a {
           font-size: 1.7rem;
     }
 
+    .nav-collapse {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /*background: rgba(232, 238, 255, 0.5);*/
+
+    }
+
     /*nav .navItem {
         display: none;
     }*/
@@ -338,6 +482,10 @@ footer .general a {
         background: url("../../img/sailboats.jpg") no-repeat center center fixed;
         background-size: cover;
         /*background-repeat: no-repeat;*/
+    }
+
+    blockquote {
+        width: 100%;
     }
 
     .flagCol {
