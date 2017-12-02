@@ -26,7 +26,8 @@
 
 .infoCol .info {
   background: linear-gradient( rgba(232, 238, 255, 0.1), rgba(232, 238, 255, 0.1)), url("../../img/textures/dust_scratches.png");
-  color: rgba(120,120,120, 0.7);
+  /*color: rgba(120,120,120, 0.7);*/
+  color: #222;
   padding: 20px 10px;
 }
 
@@ -35,22 +36,26 @@
 }
 
 .splash {
-
-}
-
-.eventSpacer {
-
-  position: relative;
+    position: relative;
 }
 
 .splash .btn {
-  position: relative;
-  bottom: 190px;
+  position: absolute;
+  left: calc(50% - 54px);
+  bottom: calc(50% - 22px);
   vertical-align: middle;
+  margin: 0px auto;
 }
 
 .splash img {
 
+}
+
+.splash.events {
+    /*background-position: top center;
+    background-size: cover;
+    background-image: url('../../img/ribFest/ribFest_large.jpg');
+    background-repeat: no-repeat;*/
 }
 
 .upcomingEvents {
@@ -79,7 +84,7 @@
     display: none;
   }
   .splash .btn {
-    bottom: 150px;
+    /*bottom: 150px;*/
   }
 }
 
@@ -94,6 +99,6 @@
     display: none;
   }
   .splash .btn {
-    bottom: 100px;
+    /*bottom: 100px;*/
   }
 }

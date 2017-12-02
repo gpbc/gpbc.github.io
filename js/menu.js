@@ -11,9 +11,9 @@ var nav = responsiveNav(".nav-collapse", { // Selector
     jsClass: "js", // String: 'JS enabled' class which is added to  element
     init: function(){}, // Function: Init callback
     open: function(){
-      //$('menu .logo').toggle();
+      $('nav').addClass('open');
     }, // Function: Open callback
     close: function(){
-      //$('menu .logo)').toggle();
+      $('nav').removeClass('open');
     } // Function: Close callback
 });
