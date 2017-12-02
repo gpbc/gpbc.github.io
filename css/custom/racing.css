@@ -28,6 +28,7 @@
 .raceLinks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .raceLinks a{
     margin: 5px;
