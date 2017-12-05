@@ -4,7 +4,7 @@
 }
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'barlow-bold';
 }
 
 body {
@@ -68,6 +68,9 @@ header img {
   /*flex: 1;
   margin-top: 10px;*/
   margin-left: 22px;
+}
+h2 {
+
 }
 
 header h1 {
@@ -246,13 +249,15 @@ menu .nav-toggle {
 }
 
 .infoCol h2 {
-  font-family: serif;
+    font-family: 'Barlow-bold';
+    font-size: 2rem;
+  /*font-family: serif;*/
   /*text-transform: uppercase;*/
 }
 .infoCol p {
   padding: 0px 20px;
   margin: 0px;
-  font-family: sans-serif;
+  font-family: 'Barlow-regular';
 }
 
 .infoCol img {
