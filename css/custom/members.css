@@ -1,1 +1,17 @@
+.memberLinks > div{
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.memberLinks h2 {
+  display: block;
+}
+.memberLink {
+  flex: 1;
+}
 
+.memberLink p {
+  margin: 0px auto;
+  max-width: 20rem;
+}
